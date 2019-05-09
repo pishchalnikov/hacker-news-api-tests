@@ -1,0 +1,6 @@
+requests==2.21.0
+pytest==4.4.1
+jsonschema==2.6.0
+jsonref==0.2
+flake8==3.6.0
+strict-rfc3339==0.7
