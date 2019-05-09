@@ -1,0 +1,90 @@
+{
+  "item_view_schema": {
+    "type": "object",
+    "properties": {
+      "by": {
+        "type": "string"
+      },
+      "descendants": {
+        "type": "number"
+      },
+      "id": {
+        "type": "number"
+      },
+      "kids": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": [
+          {
+            "type": "number"
+          }
+        ]
+      },
+      "score": {
+        "type": "number"
+      },
+      "time": {
+        "type": "number"
+      },
+      "title": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "url": {
+        "format": "uri"
+      }
+    },
+    "required": [
+      "by",
+      "descendants",
+      "id",
+      "kids",
+      "score",
+      "time",
+      "title",
+      "type",
+      "url"
+    ],
+    "additionalProperties": false
+  },
+  "user_view_schema": {
+    "type": "object",
+    "properties": {
+      "about": {
+        "type": "string"
+      },
+      "created": {
+        "type": "number"
+      },
+      "delay": {
+        "type": "number"
+      },
+      "id": {
+        "type": "string"
+      },
+      "karma": {
+        "type": "number"
+      },
+      "submitted": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": [
+          {
+            "type": "number"
+          }
+        ]
+      }
+    },
+    "required": [
+      "about",
+      "created",
+      "id",
+      "delay",
+      "karma",
+      "submitted"
+    ],
+    "additionalProperties": false
+  }
+}
